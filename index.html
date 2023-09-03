@@ -1,4 +1,4 @@
-<!-- 
+<!--
   Hello 😊.
 
   This template is designed and developed by Nisar Hassan Naqvi
@@ -20,11 +20,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="./images/icon.png" />
 
   <!-- Put your site title here -->
   <title>
-    Syed Ali Hussnain | A Web Developer based in Lahore, Pakistan.
+    Adithya Mattappily
   </title>
 
   <meta name="description" content="Add small description of yourslef.">
@@ -41,8 +41,9 @@
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
+          <li class="nav__item"><a href="#exp" class="nav__link">Experience</a></li>
           <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
+          <li class="nav__item"><a href="#clients" class="nav__link">Certifications</a></li>
           <li class="nav__item">
             <a href="#about" class="nav__link">About</a>
           </li>
@@ -56,37 +57,67 @@
       <div class="header__text">
         <h1 class="heading-primary">
           <!-- Replace the following name with your name -->
-          <span>Syed Ali Hussnain</span>
+          <span>Adithya Mattappily</span>
         </h1>
         <!-- Put a small paragraph about yourself -->
-        <p>A Web Developer based in Lahore, Pakistan.</p>
+        <p>Software Engineer, Canada.</p>
         <a href="#contact" class="btn btn--pink">Get in touch</a>
       </div>
     </div>
   </header>
 
   <main role="main">
+    <!-- ***** Education ***** -->
 
-    <!-- ***** Work ***** -->
-
-    <section class="work" id="work">
+    <section class="exp" id="edu">
       <div class="row">
-        <h2>My Work</h2>
+        <h2>My Education</h2>
         <div class="work__boxes">
 
-          <!-- Each div with the work__box class is a project. -->
+          <!-- Each div with the work__box class is an Experience. -->
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Portfolio Template</h3>
-              <p>
-                A free Open Source Portfolio for anyone to use for free.
-              </p>
+              <h3>University of Saskatchewan</h3>
+
+              <ul class="edu__list">
+                <li>Bachelor of Science in Computer Science</li>
+              </ul>
+
+
+            </div>
+            <div class="work__image-box">
+              <img src="./images/usask.jpeg" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Experience ***** -->
+
+    <section class="exp" id="exp">
+      <div class="row">
+        <h2>My Experience</h2>
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is an Experience. -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Software Developer Intern | Eigen Fitness</h3>
+
               <ul class="work__list">
-                <li>HTML</li>
-                <li>SCSS</li>
-                <li>JavaScript</li>
-                <li>Parcel</li>
+                <li>Collaborated with a team of developers to design, develop, and test an NFC hardware scanning system
+                  for IOS and Android.</li>
+                <li>Implemented a real-time messaging system between personal trainers and clients, enhancing
+                  communication and support using Figma, React Native, React.js, Node.js and Firebase.</li>
+                <li> Documented the development process, API integration, and system architecture, ensuring clear and
+                  comprehensive project documentation.</li>
+                <li>Participated in Agile development methodologies, attending daily stand-up meetings and contributing to
+                  sprint planning and retrospectives.</li>
+                <li>Actively contributed to code reviews, providing constructive feedback to enhance code quality and
+                  maintain best practices.</li>
               </ul>
 
               <div class="work__links">
@@ -99,26 +130,69 @@
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
+              <img src="./images/eigen.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Work ***** -->
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Work</h2>
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>LungFit</h3>
+              <p>
+                A user-friendly Android App designed to provide online pulmonary rehabilitation for seniors and
+                remote patients with lung conditions.
+              </p>
+              <ul class="work__list">
+                <li>Android</li>
+                <li>Kotlin</li>
+                <li>GitHub Actions CI/CD</li>
+                <li>Firebase</li>
+                <li>JUnit</li>
+                <li>Espresso and Mockito</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://nisar.surge.sh" target="_blank" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/nisarhassan12/portfolio" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/lungfit.png" class="work__image" alt="Project 1" />
             </div>
           </div>
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Calculator</h3>
+              <h3>Serverless URL Shortener</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
+                A web app where users can shorten long URLs into unique short URLs.
               </p>
               <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
+                <li>Python</li>
+                <li>AWS Lambda</li>
+                <li>AWS API Gateway</li>
+                <li>AWS DynamoDB</li>
+                <li>AWS S3</li>
+                <li>AWS CloudFormation</li>
               </ul>
 
               <div class="work__links">
-                <a href="#" class="link__text">
+                <a href="https://github.com/KarmaChild/Serverless-URL-Shortner" class="link__text" target="_blank">
                   Visit Site <span>&rarr;</span>
                 </a>
                 <a href="#">
@@ -127,7 +201,7 @@
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
+              <img src="./images/lambda.png" class="work__image" alt="Project 1" />
             </div>
           </div>
 
@@ -166,15 +240,12 @@
 
     <section class="client" id="clients">
       <div class="row">
-        <h2>Clients</h2>
+        <h2>Certifications</h2>
         <div class="client__logos">
           <!-- Add logos of the clients or companies you'have worked with. -->
-          <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
-          <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
-          <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />
-          <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />
-          <img src="./images/fastlane.png" class="client__logo" alt="Company 3" />
-          <img src="./images/chippy.png" class="client__logo" alt="Company 1" />
+          <img src="./images/aws-certified-solutions-architect-associate.png" class="client__logo" alt="Company 2" />
+          <img src="./images/aws-certified-developer-associate.png" class="client__logo" alt="Company 3" />
+          <img src="./images/aws-certified-cloud-practitioner.png" class="client__logo" alt="Company 1" />
         </div>
       </div>
     </section>
@@ -188,18 +259,19 @@
           <div class="about__text">
             <!-- Replace the below paragraph with info about yourself -->
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos id
-              nostrum illo harum blanditiis, tenetur eum suscipit cupiditate
-              in vel, ex quam quidem quos mollitia labore aut sunt eius
-              ratione molestiae fuga veniam facere similique voluptate.
+              Hi, My name is Adi and I think good software is difficult.
+              However, accomplishing the difficult has always been worth it.
+              I believe it can be achieved through investments in architecture, designing for evolution and rigorous testing.
             </p>
             <!-- Provide a link to your resume -->
-            <a href="#" class="btn">My Resume</a>
+            <a href="https://www.dropbox.com/scl/fi/txlcothd52fpcz35to2n5/Adithya-Mattappily.pdf?rlkey=4u0sr4l5qvq9nr1i60jh0lzdp&dl=0"
+               target="_blank"
+               class="btn">My Resume</a>
           </div>
 
           <div class="about__photo-container">
             <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" />
+            <img class="about__photo" src="./images/headshot.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -213,15 +285,11 @@
       <h2>Get in Touch</h2>
       <div class="contact__info">
         <p>
-          Are you looking for a fast-performing and user-friendly website to
-          represent your product or business? or looking for any kind of
-          consultation? or want to ask questions? or have some advice for me
-          or just want to say "Hi 👋" in any case feel free to Let me know. I
-          will do my best to respond back. 😊 The quickest way to reach out to
-          me is via an email.
+          Feel free to reach out to me via email or connect with me on LinkedIn.
         </p>
         <!-- Replace the email with yours -->
-        <a href="mailto:you@example.com" class="btn">you@example.com</a>
+        <a href="mailto:adithya1bijukumar@gmail.com" class="btn">Email</a>
+        <a href="https://www.linkedin.com/in/adithyamattappily/" class="btn" target="_blank">LinkedIn</a>
       </div>
     </div>
   </section>
@@ -233,23 +301,13 @@
       <!-- Update the links to point to your accounts -->
       <ul class="footer__social-links">
         <li class="footer__social-link-item">
-          <a href="https://twitter.com/nisarhassan12/" title="Link to Twitter Profile">
-            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://github.com/nisarhassan12/" title="Link to Github Profile">
+          <a href="https://github.com/KarmaChild" title="Link to Github Profile" target="_blank">
             <img src="./images/github.svg" class="footer__social-image" alt="Github">
           </a>
         </li>
         <li class="footer__social-link-item">
-          <a href="https://codepen.io/nisar_hassan" title="Link to Codepen Profile">
-            <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href=https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          <a href="https://www.linkedin.com/in/adithyamattappily/" title="Link to Github Profile" target="_blank">
+            <img src="./images/linkedin.svg" class="footer__social-image" alt="Linkedin">
           </a>
         </li>
       </ul>
@@ -258,12 +316,6 @@
       <p>
         &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
       </p>
-      <div class="footer__github-buttons">
-        <iframe
-          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
-          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
-        </iframe>
-      </div>
     </div>
   </footer>
 
