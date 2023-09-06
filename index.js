@@ -1,5 +1,5 @@
 /* -----------------------------------------
-  Have focus outline only for keyboard users 
+  Have focus outline only for keyboard users
  ---------------------------------------- */
 
 const handleFirstTab = (e) => {
@@ -40,4 +40,19 @@ window.addEventListener("scroll", () => {
     isBackToTopRendered = false;
     alterStyles(isBackToTopRendered);
   }
+});
+
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenuButtonNav = document.getElementById('mobile-menu-button-nav');
+const nav = document.querySelector('.nav');
+
+mobileMenuButton.addEventListener('click', () => {
+  nav.classList.toggle('show-mobile');
+  mobileMenuButton.classList.toggle('hide');
+});
+
+mobileMenuButtonNav.addEventListener('click', () => {
+  nav.classList.toggle('show-mobile');
+  mobileMenuButtonNav.classList.toggle('show-mobile');
+  mobileMenuButton.classList.toggle('show');
 });
